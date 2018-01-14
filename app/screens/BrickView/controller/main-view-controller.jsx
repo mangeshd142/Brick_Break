@@ -1,5 +1,5 @@
 var React = require('react');
-var BricksBox = require('../view/briks-box');
+var BricksBox = require('../view/brick-box');
 
 var MainViewController = React.createClass({
 
