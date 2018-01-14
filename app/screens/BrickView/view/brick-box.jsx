@@ -141,10 +141,12 @@ let BricksBox = React.createClass({
     });
 
     return (
-        <div className="brickBox" onKeyDown={this.keyPress} tabIndex="0">
-          {aBricks}
-          <div className="huntingBall" style={this.state.huntingBall}></div>
-          <div className="slider" style={this.state.slider}></div>
+        <div className="mainDiv" onKeyDown={this.keyPress} tabIndex="0">
+          <div className="brickBox">
+            {aBricks}
+            <div className="huntingBall" style={this.state.huntingBall}></div>
+            <div className="slider" style={this.state.slider}></div>
+          </div>
         </div>
     );
   }
