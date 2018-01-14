@@ -16,7 +16,7 @@ let BricksBox = React.createClass({
   low: '#CC944D',
   getInitialState: function () {
     let initialState = {
-      briks: BriksData,
+      briks: new BriksData,
       slider: {
         marginLeft: 220
       },
@@ -76,12 +76,14 @@ let BricksBox = React.createClass({
       this.iUpDownPosition = -5;
     }
     else if (iMarginTop >= 490) {
-      alert("Game Over");
+      alert("Game Over, Your score is " +this.state.score);
       this.iUpDownPosition = -5;
       this.iAnglePosition = -5;
       oState.slider.marginLeft = 220;
       iMarginLeft = 249;
       iMarginTop = 468;
+      this.state.score = 0;
+      this.state.briks = new BriksData
     } else {
       let _this = this;
       _.remove(this.state.briks, function (obrik) {
