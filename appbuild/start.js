@@ -20572,7 +20572,7 @@
 	  iAnglePosition: -5,
 	  iUpDownPosition: -5,
 	  iBallSpeed: 50,
-	  strong: '#484140',
+	  strong: '#484140', 
 	  middle: '#BB3927',
 	  low: '#CC944D',
 	  getInitialState: function () {
